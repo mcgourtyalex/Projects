@@ -1,0 +1,33 @@
+1.	Job 1:	20 mins, 7 sec	210 mappers	32 reducers
+
+	Job 2:	6 mins, 0 sec	210 mappers	32 reducers
+
+	Job 3:	15 mins, 24 sec	316 mappers	32 reducers
+
+	Job 4:	9 mins, 53 sec	316 mappers	32 reducers
+
+	Job 5:	8 mins, 33 sec	316 mappers	32 reducers
+
+	Job 6:	8 mins, 35 sec	316 mappers	32 reducers
+
+2.	Job 2 is 335% faster than job 1
+
+3.	Job 3:	.0193 GB/s
+
+	Job 4:	.0301 GB/s
+
+	Job 5:	.0348 GB/s
+
+	Job 6:	.0346 GB/s
+
+	Median for 5 workers: .0193
+
+	Median for 9 workers: .0346
+
+4.	The run with 9 workers was 156% faster than the run with 5 workers.
+	If the program was fully parallelizable, the run would be 180% faster. With only a difference of 24% between the actual and ideal percentages, Hadoop parralelizes very well.
+
+5.	For 5 workers: .16 cents / GB
+	For 9 workers: .29 cents / GB
+
+6.	1.35 cents
